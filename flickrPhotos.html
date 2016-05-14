@@ -43,17 +43,19 @@ function jsonFlickrApi({JSON})-->
           }
 
 //The part of code in with I am trying to add images to div but it is really hard.
-//window.onload=function(){theFirst()};
-//
-//    function theFirst(){
-//    aplm=e.photos.photo[1].url_m;
-//var elem = document.createElement("img");
-//        elem.setAttribute("src", aplm);
-//elem.setAttribute("height", "142");
-//elem.setAttribute("width", "142");
-//elem.setAttribute("alt", "Flower");
-//document.getElementById("placehere").appendChild(elem);
-//    }
+window.onload=function() {
+    for (var i = 0; i < 30; i++) {
+        var aplm = respon.photos.photo[i].url_m;
+        var elem = document.createElement("img");
+        elem.setAttribute("src", aplm);
+        elem.setAttribute("height", "142");
+        elem.setAttribute("width", "142");
+        elem.setAttribute("hspace", "5");
+        elem.setAttribute("alt", "Flower");
+        document.getElementById("placehere").appendChild(elem);
+
+    }
+};
 //            //theFirst(lmyImage);
 //
 //window.onload=function(){theSecond()};
@@ -65,7 +67,7 @@ function jsonFlickrApi({JSON})-->
 //elem.setAttribute("width", "142");
 //elem.setAttribute("alt", "Flower");
 //document.getElementById("placehere").appendChild(elem);
-//    }pwd
+//    }
 
 
 </script>
@@ -86,8 +88,8 @@ function jsonFlickrApi({JSON})-->
     <!--<img src="https://farm8.staticflickr.com/7666/26817773342_97c7ae54d1.jpg" alt="Smiley face" height="142" width="142">-->
 
 <!--</div>-->
-<!--<div id="placehere" >-->
-<!--</div>-->
+<div id="placehere" >
+</div>
 
 </body>
 </html>
