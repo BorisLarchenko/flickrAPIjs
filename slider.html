@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<script>
+    function jsonFlickrApi(rsp) {
+    respon = rsp; //In this variable we can keep the json responce from flickr.com API
+    c = (JSON.stringify(rsp)); //We can convert this responce to string just in case
+    // document.write(rsp.photos.photo[0].id); //we can even write somthing from this function
+    photoID = rsp.photos.photo[0].id; //we hold photo id in this variable just in case
+      }
+
+</script>
+
+<script src="https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=92e368e9346b5fc77cc08cb37f55948f&tags=flower&per_page=30&extras=url_m&format=json&nojsoncallback=0">
+</script>
+
+    <script src="JScode/businessLogic.js" defer></script>
 </head>
+
+
 <body>
+<div id="center">
+            <div class="left">
+                <img src="img/direction_arrow_green_left.jpg" onclick="HelloFunction();">
+                <img id="change" src="https://farm8.staticflickr.com/7703/27320065641_7e5beb3719.jpg">
+                <img src="img/direction_arrow_green_right.jpg" onclick="RightFunc();">
+            </div>
+
+</div>
 
 </body>
 </html>
