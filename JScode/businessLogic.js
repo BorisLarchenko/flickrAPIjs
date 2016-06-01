@@ -8,11 +8,10 @@ function HelloFunction() {
     }
     else {
     i = i - 1;
-var aplm = respon.photos.photo[i].url_m;
-var image=document.getElementById('change');
-image.src = aplm;
     }
-    
+    var aplm = respon.photos.photo[i].url_m;
+    var image=document.getElementById('change');
+    image.src = aplm;
 }
 
 function RightFunc() {
@@ -21,13 +20,11 @@ function RightFunc() {
    }
     else {
            i = i + 1;
+
+   }
 var aplm = respon.photos.photo[i].url_m;
 var image=document.getElementById('change');
 image.src = aplm;
-       
-   }
-
-
 }
 var i = 10;
 var aplm = respon.photos.photo[i].url_m;
