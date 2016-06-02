@@ -6,8 +6,47 @@
     margin-right: auto;
 }
 
-.left {
-    width: 50%
-    margin: 0 auto;
-    float: left;
+#banner {
+    background-repeat: no-repeat;
+
+    background-image: url(../img/direction_arrow_green_left.jpg);
+width: 180px; /* Width of new image */
+  height: 236px; /* Height of new image */
+  padding: 135px; /* Equal to width of new image */
+
+}
+
+
+#banner:hover {
+    background-repeat: no-repeat;
+    background-image: url(../img/arrow_button_metal_green_down.jpg);
+    color: #305E5C;
+                    line-height: 220px;
+                    text-decoration: none;
+                    padding:  130px;
+
+}
+#banner1 {
+    background-repeat: no-repeat;
+
+    background-image: url(../img/direction_arrow_green_right.jpg);
+    width: 256px; /* Width of new image */
+    height: 256px; /* Height of new image */
+    /* Equal to width of new image */
+    padding-top: 135px;
+    padding-right: 135px;
+    padding-left: 135px;
+    padding-bottom: 135px;
+
+}
+
+
+#banner1:hover {
+    background-repeat: no-repeat;
+    background-image: url(../img/arrow_button_metal_green_down.jpg);
+    color: #305E5C;
+                    line-height: 220px;
+                    text-decoration: none;
+                    padding:  130px;
+
 }
